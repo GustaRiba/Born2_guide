@@ -1,0 +1,61 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   born_ava                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gmorais- <gmorais-@student.42lisboa.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/01/23 11:34:29 by gmorais-          #+#    #+#             */
+/*   Updated: 2023/01/23 13:27:44 by gmorais-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+*Como a funciona Virtual machine?
+--> E um computador executado dentro de um software, ou seja,
+	um computador virtual dentro de um computador fisico.
+
+*Sistema escolhido
+-->debian, por ser mais simples de usar.
+
+*Qual a diferenca entre rocky e debian?
+-->A principal diferenca e que o debian recebe atualizacoes constantes
+o tornando mais instavel em comparacao com o rocky(sucessor do centOS)
+que por sua vez, tem a estabilidade como maior qualidade sendo por isso,
+escolhido como sistema por grande parte das empresas.
+
+*Qual a finalidade da maquina virtual?
+-->Com uma maquina virtual conseguimos instalar um sistema operacional dentro de outro sistema operacional, sendo otimo para testar programas ou novos sistemas operacionais sem trazer problemas para o computador real.
+
+*Qual a diferenca entre apt e aptitude?
+-->O Aptitude e um gerenciador de pacotes de alto nivel, enquanto o apt 
+e de nivel inferior. O  Apt por ser de nivel inferior e restrito a uma
+linha de codigo, ja o aptitude tem um inteface interativa com opcao
+de operacao de linha de comando.
+
+*Oque e o Apparmor?
+-->e um modulo de seguranca que permite ao admistrador restringir 
+os recursos dos programas. Appamor bloqueia processos vulneraveis, 
+evitando possiveis danos.
+
+*Checar UFW.
+--> sudo ufw status
+	O ufw e a versao simplificada do iptables
+
+*checar ssh.
+ --> sudo service status ssh
+	ssh e um protocolo de rede criptografico para 
+	operacao de servicos de forma segura em redes inseguras
+
+*checar sistema escolhido.
+--> lsb_release -a || cat /etc/os-release
+
+*checar user.
+--> getent group sudo
+	getent group user42
+
+*Como criar um novo user?
+--> sudo adduser username
+	sudo chage -l username
+	sudo adduser username sudo
+	sudo adduser username user42 
+
